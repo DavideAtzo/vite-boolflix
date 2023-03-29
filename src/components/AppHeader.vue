@@ -4,11 +4,16 @@ export default {
     components: {
         AppSearch
     },
+    methods: {
+        handleSearch() {
+            this.$emit('searchFilm');
+        }
+    }
 }
 </script>
 
 <template>
-    <AppSearch />
+    <AppSearch @searchInput="handleSearch" />
 </template>
 
 
