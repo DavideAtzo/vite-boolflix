@@ -1,19 +1,14 @@
 <script>
-import HelloApp from './components/HelloApp.vue';
+import { store } from './store';
 export default {
-  name:'App',
-  components: {
-    HelloApp
-  }
-}
+  data() {
+    return {
+      store
+    }
+  }}
 </script>
 
-<template>
-  <HelloApp />
-</template>
+<template></template>
 
 
-<style lang="scss">
-//versione 1 - inclusione via app.vue
-// @use './assets/scss/main.scss' as *;
-</style>
+<style lang="scss"></style>
