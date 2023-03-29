@@ -11,10 +11,10 @@ export default {
 </script>
 
 <template>
-    <h5>{{ title }}</h5>
-    <h6>{{ originalTitle }}</h6>
-    <div>{{ lenguage }}</div>
-    <div>{{ valutation }}</div>
+    <h5>Titolo: {{ title }}</h5>
+    <h6>Titolo originale: {{ originalTitle }}</h6>
+    <div>lingua originale:{{ language }}</div>
+    <div>Voto: {{ valutation }}</div>
 </template>
 
 
