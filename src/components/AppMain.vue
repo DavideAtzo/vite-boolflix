@@ -1,8 +1,10 @@
 <script>
 import AppHeader from './AppHeader.vue';
+import AppFilmList from './AppFilmslist.vue';
 export default {
     components: {
-        AppHeader
+        AppHeader,
+        AppFilmList
     },
     methods: {
         handleSearch() {
@@ -14,6 +16,7 @@ export default {
 
 <template>
     <AppHeader @searchInput="handleSearch"/>
+    <AppFilmList />
 </template>
 
 
