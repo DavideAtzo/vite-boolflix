@@ -12,7 +12,7 @@ export default {
 <template>
     <header>
         <input type="text" id="search-bar" placeholder="Cerca film" v-model="store.searchFilm">
-        <button type="button" @click.="$emit('searchInput')">cerca</button>
+        <button type="button" @click.="$emit('search-Film')">cerca</button>
     </header>
 </template>
 

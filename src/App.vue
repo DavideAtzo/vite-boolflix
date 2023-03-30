@@ -1,9 +1,11 @@
 <script>
 import axios from 'axios';
 import { store } from './store';
+import AppHeader from './components/AppHeader.vue';
 import AppMain from './components/AppMain.vue';
 export default {
   components: {
+    AppHeader,
     AppMain
   },
   data() {
@@ -42,7 +44,8 @@ export default {
 </script>
 
 <template>
-  <AppMain @search-Film="search"/>
+  <AppHeader @search-Film="search" />
+  <AppMain />
 </template>
 
 
