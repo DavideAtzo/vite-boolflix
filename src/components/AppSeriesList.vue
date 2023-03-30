@@ -24,6 +24,4 @@ export default {
     </ul>
 </template>
 
-
-
 <style lang="scss" scoped></style>
