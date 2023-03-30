@@ -18,7 +18,7 @@ export default {
 <template>
     <ul>
         <li v-for="film in store.films">
-            <AppPoster :title="film.title" :originalTitle="film.original_title" :language="film.original_language"
+            <AppPoster :img="'https://cdn.pixabay.com/photo/2016/10/21/14/50/plouzane-1758197__480.jpg'" :title="film.title" :originalTitle="film.original_title" :language="film.original_language"
                 :valutation="film.vote_average" />
         </li>
     </ul>
