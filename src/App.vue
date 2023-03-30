@@ -11,6 +11,7 @@ export default {
       store
     }
   },
+  
   methods: {
     search(){
       axios.get(this.store.urlFilm, {
@@ -29,7 +30,7 @@ export default {
 </script>
 
 <template>
-  <AppMain @searchFilm="search"/>
+  <AppMain @search-Film="search"/>
 </template>
 
 

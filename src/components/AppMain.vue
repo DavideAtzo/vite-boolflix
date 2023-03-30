@@ -6,6 +6,7 @@ export default {
         AppHeader,
         AppFilmList
     },
+    emits: ["searchFilm"],
     methods: {
         handleSearch() {
             this.$emit('searchFilm');

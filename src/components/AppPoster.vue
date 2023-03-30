@@ -1,6 +1,10 @@
 <script>
+import CountryFlag from 'vue-country-flag-next'
 export default {
     name: 'poster',
+    components: {
+        CountryFlag
+    },
     props: {
         title: String,
         originalTitle: String,
@@ -15,6 +19,7 @@ export default {
     <h6>Titolo originale: {{ originalTitle }}</h6>
     <div>lingua originale:{{ language }}</div>
     <div>Voto: {{ valutation }}</div>
+    <country-flag country='hr' size='normal'/>
 </template>
 
 
