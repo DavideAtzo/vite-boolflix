@@ -22,6 +22,9 @@ export default {
                     return this.language;
             }
         },
+        getStars(valutation) {
+            return (Math.ceil(valutation / 2))
+        }
     }
 }
 </script>
@@ -33,7 +36,10 @@ export default {
     <h5>Titolo: {{ title }}</h5>
     <h6>Titolo originale: {{ originalTitle }}</h6>
     <div>lingua originale: <country-flag :country=getFlag() size='small' /></div>
-    <div>Voto: {{ valutation }}</div>
+    <div>
+        <font-awesome-icon icon="fa-solid fa-star" v-for="n in getStars(valutation)" />
+        <font-awesome-icon icon="fa-regular fa-star" v-for="n in (5 - getStars(valutation))" />
+    </div>
 </template>
 
 
