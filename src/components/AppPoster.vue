@@ -2,14 +2,24 @@
 import CountryFlag from 'vue-country-flag-next'
 export default {
     name: 'poster',
-    components: {
-        CountryFlag
-    },
     props: {
         title: String,
         originalTitle: String,
         language: String,
         valutation: Number
+    },
+    components: {
+        CountryFlag
+    },
+    methods: {
+        getFlag() {
+            switch (this.language) {
+                case "en":
+                    return "gb";
+                default:
+                    return this.language;
+            }
+        }
     }
 }
 </script>
@@ -17,9 +27,8 @@ export default {
 <template>
     <h5>Titolo: {{ title }}</h5>
     <h6>Titolo originale: {{ originalTitle }}</h6>
-    <div>lingua originale:{{ language }}</div>
+    <div>lingua originale: <country-flag :country=getFlag() size='small' /></div>
     <div>Voto: {{ valutation }}</div>
-    <country-flag country='hr' size='normal'/>
 </template>
 
 
