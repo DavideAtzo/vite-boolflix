@@ -10,7 +10,7 @@ export default {
         return {
             store
         }
-    },
+    }
 
 }
 </script>
@@ -18,8 +18,8 @@ export default {
 <template>
     <ul>
         <li v-for="film in store.films">
-            <AppPoster :img="'https://cdn.pixabay.com/photo/2016/10/21/14/50/plouzane-1758197__480.jpg'" :title="film.title" :originalTitle="film.original_title" :language="film.original_language"
-                :valutation="film.vote_average" />
+            <AppPoster :img="`https://image.tmdb.org/t/p/w300${ film.backdrop_path }`" :title="film.title"
+                :originalTitle="film.original_title" :language="film.original_language" :valutation="film.vote_average" />
         </li>
     </ul>
 </template>
