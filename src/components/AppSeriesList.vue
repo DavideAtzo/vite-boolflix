@@ -18,7 +18,7 @@ export default {
 <template>
     <ul>
         <li v-for="series in store.series">
-            <AppPoster :title="series.name" :originalTitle="series.original_title" :language="series.original_language"
+            <AppPoster :img="`https://image.tmdb.org/t/p/w300${ series.poster_path }`" :title="series.name" :originalTitle="series.original_title" :language="series.original_language"
                 :valutation="series.vote_average" />
         </li>
     </ul>

@@ -8,6 +8,7 @@ export default {
         originalTitle: String,
         language: String,
         valutation: Number
+
     },
     components: {
         CountryFlag
@@ -20,13 +21,16 @@ export default {
                 default:
                     return this.language;
             }
-        }
+        },
     }
 }
 </script>
 
 <template>
-    <div><img :src="img"></div>
+    <div>
+        <img :src="img">
+        <!-- ../assets/img/HD-wallpaper-error-glitch.jpg -->
+    </div>
     <h5>Titolo: {{ title }}</h5>
     <h6>Titolo originale: {{ originalTitle }}</h6>
     <div>lingua originale: <country-flag :country=getFlag() size='small' /></div>

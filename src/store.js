@@ -7,5 +7,5 @@ export const store = reactive({
     ApiKey:'6dd78158f01daaa583889468c6b62b1a',
     urlFilm: 'https://api.themoviedb.org/3/search/movie?',
     urlSeries: 'https://api.themoviedb.org/3/search/tv?',
-    pathImg: 'https://image.tmdb.org/t/p/w300'
+    errorImg: '../assets/scss/img/HD-wallpaper-error-glitch.jpg'
 })
