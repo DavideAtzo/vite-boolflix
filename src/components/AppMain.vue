@@ -23,6 +23,4 @@ export default {
     <AppSeriesList />
 </template>
 
-
-
 <style lang="scss" scoped></style>
