@@ -17,9 +17,9 @@ export default {
 
 <template>
     <ul>
-        <li v-for="film in store.films">
-            <AppPoster :title="film.title" :originalTitle="film.original_title" :language="film.original_language"
-                :valutation="film.vote_average" />
+        <li v-for="series in store.series">
+            <AppPoster :title="series.name" :originalTitle="series.original_title" :language="series.original_language"
+                :valutation="series.vote_average" />
         </li>
     </ul>
 </template>
