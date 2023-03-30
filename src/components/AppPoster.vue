@@ -29,7 +29,6 @@ export default {
 <template>
     <div>
         <img :src="img">
-        <!-- ../assets/img/HD-wallpaper-error-glitch.jpg -->
     </div>
     <h5>Titolo: {{ title }}</h5>
     <h6>Titolo originale: {{ originalTitle }}</h6>
