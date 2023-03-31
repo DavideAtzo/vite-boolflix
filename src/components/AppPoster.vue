@@ -7,8 +7,8 @@ export default {
         title: String,
         originalTitle: String,
         language: String,
-        valutation: Number
-
+        valutation: Number,
+        overview: String
     },
     components: {
         CountryFlag
@@ -47,9 +47,17 @@ export default {
             <font-awesome-icon icon="fa-solid fa-star" v-for="n in getStars(valutation)" />
             <font-awesome-icon icon="fa-regular fa-star" v-for="n in (5 - getStars(valutation))" />
         </div>
+        <p>Descrizione: {{ overview }}</p>
     </div>
 </template>
 
 
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.poster{
+    img{
+        width: 300px;
+        height: 450px;
+    }
+}
+</style>

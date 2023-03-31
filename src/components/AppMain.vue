@@ -14,12 +14,19 @@ export default {
 <template>
     <main>
         <section id="section-movies" class="container">
-            <AppFilmList />
+            <div class="row">
+                <AppFilmList />
+            </div>
         </section>
         <section id="section-series" class="container">
-            <AppSeriesList />
+            <div class="row">
+                <AppSeriesList />
+            </div>
+
         </section>
     </main>
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+
+</style>
