@@ -14,7 +14,8 @@ export default {
         <div class="container-fluid">
             <nav class="row justify-content-between align-items-center">
                 <div class="col-auto">
-                    <h1>booflix</h1>
+                    <img src="../assets/img/logo-boolflix.svg" alt="">
+                    <!-- <h1>boolflix</h1> -->
                 </div>
                 <div id="section-search" class="col-4">
                     <form action="" class="d-flex">
@@ -37,6 +38,11 @@ header {
 
     nav {
         height: 100px;
+
+        img {
+            width: 300px;
+            filter: invert(1);
+        }
 
         h1 {
             font-size: 25px;
@@ -62,8 +68,9 @@ header {
                 background-color: inherit;
                 border: none;
                 position: absolute;
-                top: 10px;
+                top: 15px;
                 right: 0;
+
                 span {
                     background-color: $secondary;
                     color: $text-color;
