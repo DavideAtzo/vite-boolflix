@@ -36,10 +36,10 @@ export default {
 </script>
 
 <template>
-    <article>
-        <div>
-            <img :src="img">
-        </div>
+    <div class="poster">
+        <img :src="img">
+    </div>
+    <div class="info-text">
         <h5>Titolo: {{ title }}</h5>
         <h6>Titolo originale: {{ originalTitle }}</h6>
         <div>lingua originale: <country-flag :country=getFlag() size='small' /></div>
@@ -47,7 +47,7 @@ export default {
             <font-awesome-icon icon="fa-solid fa-star" v-for="n in getStars(valutation)" />
             <font-awesome-icon icon="fa-regular fa-star" v-for="n in (5 - getStars(valutation))" />
         </div>
-    </article>
+    </div>
 </template>
 
 
