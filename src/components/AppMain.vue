@@ -7,13 +7,19 @@ export default {
         AppFilmList,
         AppSeriesList
     },
-    
+
 }
 </script>
 
 <template>
-    <AppFilmList />
-    <AppSeriesList />
+    <main>
+        <section id="section-movies" class="container">
+            <AppFilmList />
+        </section>
+        <section id="section-series" class="container">
+            <AppSeriesList />
+        </section>
+    </main>
 </template>
 
 <style lang="scss" scoped></style>
