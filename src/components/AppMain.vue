@@ -28,5 +28,8 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-
+@use '../assets/scss/_partial/variables' as *;
+main{
+    background-color: $primary;
+}
 </style>
