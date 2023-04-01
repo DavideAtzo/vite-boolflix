@@ -105,7 +105,23 @@ export default {
 }
 
 .big-poster:hover .info-box {
-    // display: block;
     width: 88%;
 }
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #333131;
+    border-radius: 10px;
+}
+
 </style>
