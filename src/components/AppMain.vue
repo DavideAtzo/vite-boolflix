@@ -20,7 +20,7 @@ export default {
 <template>
     <main>
         <section id="section-movies" class="container">
-            <div id="films" v-show="store.films.length === showTitle">
+            <div id="films" v-show="store.films.length >= showTitle">
                 <h1 class="pt-5 mx-4">Film trovati:</h1>
             </div>
             <div class="row">
@@ -28,7 +28,7 @@ export default {
             </div>
         </section>
         <section id="section-series" class="container mb-3">
-            <div id="serie" v-show="store.series.length === showTitle">
+            <div id="serie" v-show="store.series.length >= showTitle">
                 <h1 class="mt-5 mx-4">Serie trovati:</h1>
             </div>
             <div class="row">
@@ -42,7 +42,6 @@ export default {
 @use '../assets/scss/_partial/variables' as *;
 
 main {
-    padding-bottom: 6.25rem;
     background-color: $primary;
 
     h1 {
