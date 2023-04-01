@@ -15,11 +15,13 @@ export default {
     <main>
         <section id="section-movies" class="container">
             <div class="row">
+                <!-- <h1 class="mt-5 mx-4">Film trovati:</h1> -->
                 <AppFilmList />
             </div>
         </section>
-        <section id="section-series" class="container">
+        <section id="section-series" class="container mb-3">
             <div class="row">
+                <!-- <h1 class="mt-5 mx-4">Serie TV trovate:</h1> -->
                 <AppSeriesList />
             </div>
 
@@ -31,5 +33,11 @@ export default {
 @use '../assets/scss/_partial/variables' as *;
 main{
     background-color: $primary;
+    h1{
+        text-transform: uppercase;
+        text-decoration: underline;
+        font-weight: 700;
+        color: $secondary;
+    }
 }
 </style>

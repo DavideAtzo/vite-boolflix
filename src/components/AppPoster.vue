@@ -41,14 +41,14 @@ export default {
             <img :src="img">
         </div>
         <div class="info-text">
-            <h5>Titolo: {{ title }}</h5>
+            <h5 class="my-3">Titolo: {{ title }}</h5>
             <h6>Titolo originale: {{ originalTitle }}</h6>
-            <div>lingua originale: <country-flag :country=getFlag() size='small' /></div>
+            <div>Lingua originale: <country-flag :country=getFlag() size='normal' class="flag mb-1" /></div>
             <div class="my-2">
-                <font-awesome-icon icon="fa-solid fa-star" v-for="n in getStars(valutation)" />
+                <font-awesome-icon class="stars" icon="fa-solid fa-star" v-for="n in getStars(valutation)" />
                 <font-awesome-icon icon="fa-regular fa-star" v-for="n in (5 - getStars(valutation))" />
             </div>
-            <p class="mx-3">Descrizione: {{ overview }}</p>
+            <p class="mx-3 mb-4">Descrizione: {{ overview }}</p>
         </div>
     </div>
 </template>
@@ -65,6 +65,7 @@ export default {
         width: 100%;
         height: 450px;
         display: block;
+        border-radius: 20px;
     }
 }
 
@@ -75,7 +76,7 @@ export default {
 }
 
 .info-text {
-    background-color: $hover-text;
+    background-color: $secondary;
     display: none;
     padding: 0 10px;
     position: absolute;
@@ -83,11 +84,19 @@ export default {
     left: 20px;
     right: 20px;
     bottom: -5px;
-    color: red;
+    color: $text-color;
     margin: 5px;
     overflow-y: auto;
+    border-radius: 20px;
+}
+.flag{
+    vertical-align: middle;
+}
+.stars{
+    color: yellow;
 }
 
 .big-poster:hover .info-text {
     display: block;
-}</style>
+}
+</style>

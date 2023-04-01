@@ -20,6 +20,7 @@ export default {
       axios.get(this.store.urlFilm, {
         params: {
           api_key: store.ApiKey,
+          language: store.lang,
           query: store.searchFilm
         }
       })
