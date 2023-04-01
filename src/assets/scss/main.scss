@@ -1,6 +1,10 @@
 @import "../../../node_modules/bootstrap/scss/bootstrap.scss";
-
+@import "./_partial/variables";
 li{
     list-style-type: none;
 }
 
+body{
+    background-color: $primary;
+    height: 100vh;
+}

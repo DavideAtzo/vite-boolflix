@@ -32,12 +32,13 @@ export default {
 <style lang="scss" scoped>
 @use '../assets/scss/_partial/variables' as *;
 main{
-    background-color: $primary;
+    padding-bottom: 6.25rem;
     h1{
         text-transform: uppercase;
         text-decoration: underline;
         font-weight: 700;
         color: $secondary;
+        
     }
 }
 </style>

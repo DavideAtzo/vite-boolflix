@@ -62,7 +62,7 @@ header {
             }
 
             h1 {
-                font-size: 25px;
+                font-size: 1.5625rem;
                 font-weight: 800;
                 text-transform: uppercase;
                 color: $secondary;
@@ -93,7 +93,7 @@ header {
                         color: $text-color;
                         text-transform: uppercase;
                         font-weight: 600;
-                        padding: 13px 20px;
+                        padding: .8125rem 1.25rem;
                         border-radius: 50px;
 
                     }
