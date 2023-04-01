@@ -1,5 +1,5 @@
 <script>
-
+import { store } from '../store';
 import AppFilmList from './AppFilmslist.vue';
 import AppSeriesList from './AppSeriesList.vue';
 export default {
@@ -7,6 +7,12 @@ export default {
         AppFilmList,
         AppSeriesList
     },
+    data() {
+        return {
+            store,
+            showTitle: 20
+        }
+    }
 
 }
 </script>
@@ -14,14 +20,18 @@ export default {
 <template>
     <main>
         <section id="section-movies" class="container">
+            <div id="films" v-show="store.films.length === showTitle">
+                <h1 class="mt-5 mx-4">Film trovati:</h1>
+            </div>
             <div class="row">
-                <!-- <h1 class="mt-5 mx-4">Film trovati:</h1> -->
                 <AppFilmList />
             </div>
         </section>
         <section id="section-series" class="container mb-3">
+            <div id="films" v-show="store.series.length === showTitle">
+                <h1 class="mt-5 mx-4">Film trovati:</h1>
+            </div>
             <div class="row">
-                <!-- <h1 class="mt-5 mx-4">Serie TV trovate:</h1> -->
                 <AppSeriesList />
             </div>
 
