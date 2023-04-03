@@ -120,7 +120,7 @@ export default {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #333131;
+    background: $background;
     border-radius: 10px;
 }
 
